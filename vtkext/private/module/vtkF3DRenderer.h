@@ -528,14 +528,10 @@ public:
   //@}
 
   /**
-   * Add to the total animation time (cumulative time of each frame being rendered) in seconds
+   * Set/Get the total animation time (cumulative time of each frame being rendered) in seconds
    */
-  void AddTime(double time);
-
-  /**
-   * Gets total time of render
-   */
-  double GetTime();
+  vtkSetMacro(TotalTime, double);
+  vtkGetMacro(TotalTime, double);
 
   /**
    * Set console badge enabled status
