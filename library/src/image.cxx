@@ -259,6 +259,7 @@ image& image::operator=(image&& img) noexcept
   return *this;
 }
 
+//----------------------------------------------------------------------------
 image::image(std::byte* buffer, std::size_t size)
   : Internals(new image::internals())
 {
