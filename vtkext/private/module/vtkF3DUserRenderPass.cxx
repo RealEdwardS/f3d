@@ -1,5 +1,6 @@
 #include "vtkF3DUserRenderPass.h"
 
+#include "vtkF3DRenderer.h"
 #include "vtkObjectFactory.h"
 #include "vtkOpenGLError.h"
 #include "vtkOpenGLFramebufferObject.h"
@@ -12,7 +13,6 @@
 #include "vtkRenderer.h"
 #include "vtkShaderProgram.h"
 #include "vtkTextureObject.h"
-#include "vtkF3DRenderer.h"
 
 #include <vtkRendererCollection.h>
 
