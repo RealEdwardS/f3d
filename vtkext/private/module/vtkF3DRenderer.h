@@ -533,7 +533,7 @@ public:
   //@}
 
   /**
-   * Set/Get the total animation time (cumulative time of each frame being rendered) in seconds
+   * Set/Get the cumulative UI delta time (time between frame being rendered) in seconds
    */
   vtkSetMacro(TotalTime, double);
   vtkGetMacro(TotalTime, double);
