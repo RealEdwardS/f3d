@@ -101,7 +101,15 @@ void vtkF3DUserRenderPass::Render(const vtkRenderState* s)
   this->ColorTexture->Activate();
   this->QuadHelper->Program->SetUniformi("source", this->ColorTexture->GetTextureUnit());
   this->QuadHelper->Program->SetUniform2i("resolution", size);
-  this->QuadHelper->Program->SetUniformf("time", ren->GetTotalTime());
+
+  if (!ren)
+  {
+    this->QuadHelper->Program->SetUniformf("time", 0);
+  }
+  else
+  {
+    this->QuadHelper->Program->SetUniformf("time", ren->GetTotalTime());
+  }
 
   ostate->vtkglDisable(GL_BLEND);
   ostate->vtkglDisable(GL_DEPTH_TEST);

@@ -528,12 +528,6 @@ public:
   //@}
 
   /**
-   * Set/Get the cumulative UI delta time (time between frame being rendered) in seconds
-   */
-  vtkSetMacro(TotalTime, double);
-  vtkGetMacro(TotalTime, double);
-
-  /**
    * Set console badge enabled status
    */
   void SetConsoleBadgeEnabled(bool enabled);
