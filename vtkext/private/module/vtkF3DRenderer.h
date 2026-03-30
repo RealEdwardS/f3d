@@ -528,6 +528,16 @@ public:
   //@}
 
   /**
+   * Add to the total animation time (cumulative time of each frame being rendered) in seconds
+   */
+  void AddTime(double time);
+
+  /**
+   * Gets total time of render
+   */
+  double GetTime();
+
+  /**
    * Set console badge enabled status
    */
   void SetConsoleBadgeEnabled(bool enabled);
