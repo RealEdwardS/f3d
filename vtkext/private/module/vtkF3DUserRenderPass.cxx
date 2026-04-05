@@ -14,8 +14,6 @@
 #include "vtkShaderProgram.h"
 #include "vtkTextureObject.h"
 
-#include <vtkRendererCollection.h>
-
 vtkStandardNewMacro(vtkF3DUserRenderPass);
 
 //------------------------------------------------------------------------------
