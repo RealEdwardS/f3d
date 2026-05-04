@@ -77,6 +77,7 @@ vec4 pixel(vec2 uv)
 ```
 
 ### Oscillating Colors
+
 ```glsl
 vec4 pixel(vec2 uv)
 {
